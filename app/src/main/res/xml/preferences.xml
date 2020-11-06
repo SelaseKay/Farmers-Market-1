@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:title="@string/profile"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="username"
+            android:title="@string/username"
+            android:summary="first name, last name, profile picture, location"
+            android:fragment="com.ilatyphi95.farmersmarket.ui.settings.UsernamePrefFragment"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            android:key="emailAddress"
+            android:title="@string/emailAddress"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            android:key="phoneNumber"
+            android:title="@string/phone_number"
+            app:iconSpaceReserved="false"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/notification"
+        app:iconSpaceReserved="false"
+        app:allowDividerBelow="true">
+
+        <SwitchPreferenceCompat
+            android:key="newMsgNotification"
+            android:title="@string/new_msg_notification"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            android:key="ringtone"
+            android:title="@string/ringtone"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            android:key="vibration"
+            android:title="@string/vibrate"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+
+
+    <Preference
+        android:key="logoutPref"
+        android:title="@string/logout"
+        app:iconSpaceReserved="false"
+        app:allowDividerAbove="true"/>
+
+
+
+</PreferenceScreen>

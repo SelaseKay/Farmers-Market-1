@@ -21,10 +21,11 @@ class HomeActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
         findViewById<BottomNavigationView>(R.id.nav_view).setupWithNavController(navController)
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
+        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+        }
+
 
 }
